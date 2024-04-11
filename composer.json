@@ -1,0 +1,32 @@
+{
+  "name": "fernandosena/send_email",
+  "description": "Sistema de envio de e-mail",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Fernando C. Sena",
+      "email": "fernandocarvalho.sena@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-pdo": "^8.0",
+    "phpmailer/phpmailer": "^6.8",
+    "league/plates": "^v3.5.0",
+    "coffeecode/cropper": "^2.0",
+    "coffeecode/router": "^2.0"
+  }
+}
