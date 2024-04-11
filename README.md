@@ -34,3 +34,5 @@ define("CONF_MAIL_OPTION_CHARSET", "utf-8");
 caso não tenha um servidor de email recomendo utilizar o zoho. é gratuito
 
 <https://www.zoho.com/pt-br/mail/>
+
+5) importe o arquivo **send_email.sql** em seu banco de dados 
