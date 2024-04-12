@@ -25,6 +25,12 @@ $route->post("/cadastrar", "Web:register");
 $route->get("/recuperar/{code}", "Web:reset");
 $route->post("/recuperar/resetar", "Web:reset");
 
+//optin
+$route->group(null);
+$route->get("/confirma", "Web:confirm");
+$route->get("/obrigado/{email}", "Web:success");
+$route->post("/obrigado", "Web:success");
+
 /**
  * ERROR ROUTES
  */
