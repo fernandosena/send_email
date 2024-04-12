@@ -15,9 +15,6 @@ class Controller
     /** @var View */
     protected $view;
 
-    /** @var Seo */
-    protected $seo;
-
     /** @var Message */
     protected $message;
 
