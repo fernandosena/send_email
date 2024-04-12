@@ -73,10 +73,10 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
  */
 define("CONF_MAIL_HOST", "smtp.zoho.com");
 define("CONF_MAIL_PORT", "587");
-define("CONF_MAIL_USER", "");
-define("CONF_MAIL_PASS", "");
-define("CONF_MAIL_SENDER", ["name" => CONF_SITE_NAME, "address" => ""]);
-define("CONF_MAIL_SUPPORT", "");
+define("CONF_MAIL_USER", "sistema@companhiavip.com");
+define("CONF_MAIL_PASS", "Rede2050kl@");
+define("CONF_MAIL_SENDER", ["name" => CONF_SITE_NAME, "address" => "sistema@companhiavip.com"]);
+define("CONF_MAIL_SUPPORT", "contato@companhiavip.com");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);

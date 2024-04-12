@@ -190,32 +190,13 @@ class Web extends Controller
             return;
         }
 
-        $head = $this->seo->render(
-            "Bem-vindo(a) ao " . CONF_SITE_NAME,
-            CONF_SITE_DESC,
-            url("/obrigado"),
-            theme("/assets/images/share.jpg")
-        );
-
-        if($user && empty($user->fantasy_name)){
-           echo $this->view->render("optin", [
-                "head" => $head,
-                "form" => true,
-                "data" => (object)[
-                    "code" => $data["email"]
-                ]
-            ]);
-            return;
-        }
-
         echo $this->view->render("optin", [
-            "head" => $head,
             "data" => (object)[
                 "title" => "Tudo pronto. Você já pode aproveitar nosso site :)",
                 "desc" => "Bem-vindo(a) ao seu sistema de acompanhantes, vamos começar?",
                 "image" => theme("/assets/images/optin-success.png"),
-                "link" => url("/entrar"),
-                "linkTitle" => "Fazer Login"
+                "link" => url("/"),
+                "linkTitle" => "Voltar"
             ],
             "track" => (object)[
                 "fb" => "",
